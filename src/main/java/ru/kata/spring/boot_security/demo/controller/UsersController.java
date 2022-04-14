@@ -1,8 +1,6 @@
 package ru.kata.spring.boot_security.demo.controller;
 
 
-
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -28,7 +26,7 @@ public class UsersController {
 
         User user = userService.findByEmail(principal.getName());
         model.addAttribute("user", user);
-        return "userPage";
+        return "userPageBstr";
     }
 
 }
